@@ -33,15 +33,22 @@ prezto(){
     else
         printf '\nif [ -t 1 ]; then\nexec zsh\nfi' >> ~/.bashrc
     fi
+
+    # Install powerline10k
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+    echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
 }
 
 node.install(){
-    init
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+    # init
+    # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
-    # Restart shell
-    exec zsh -l
+    # # Restart shell
+    # exec zsh -l
 
-    # Install Node
-    nvm install stable
+    # # Install Node
+    # nvm install stable
+
+    curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+    sudo apt-get install -y nodejs
 }
