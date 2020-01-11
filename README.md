@@ -14,4 +14,6 @@ A set of scripts for setting up the Windows Sub-system for Linux(WSL).
 
 5. Copy the contents of ./root/ foler to 'root' path i.e '~'
 
-6. Run `node.install` to install nvm and node default
+6. Change fonts for VS Code and Windows Terminal.
+
+7. Enjoy!
