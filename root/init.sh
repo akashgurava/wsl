@@ -1,9 +1,9 @@
 #!/bin/bash
 
 init() {
-    sudo apt-get update
-    sudo apt-get -y upgrade
-    sudo apt-get install -y build-essential
+    sudo apt update
+    sudo apt -y upgrade
+    sudo apt install -y build-essential
 }
 
 prezto(){
