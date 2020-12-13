@@ -1,0 +1,6 @@
+# Completions
+zsh-users/zsh-history-substring-search
+zdharma/fast-syntax-highlighting
+RobSis/zsh-completion-generator
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
